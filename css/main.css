@@ -1,0 +1,540 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  transition: all 0.8s ease-in-out;
+}
+
+.container {
+  max-width: 1360px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.info {
+  width: 100%;
+}
+.info__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.info__logo img {
+  max-height: 150px;
+}
+.info__date {
+  display: flex;
+  align-items: center;
+}
+.info__date-item {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 30px;
+  text-align: center;
+  border-right: 1px solid #fff;
+  padding-right: 30px;
+}
+.info__date-item:nth-child(3) {
+  border-right: none;
+}
+.info__date-item h1 {
+  text-transform: uppercase;
+  color: #fff;
+}
+.info__date-item p {
+  color: #fff;
+}
+.info__subtitle {
+  padding: 20px 12px;
+  background-color: rgba(255, 255, 255, 0.1490196078);
+  border-radius: 10px;
+  max-width: 545px;
+  text-align: center;
+}
+.info__subtitle h1 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+}
+.info__title {
+  margin: 30px 0;
+}
+.info__title h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+.info__title-forms {
+  margin: 20px 0;
+}
+.info__title-forms form {
+  display: flex;
+}
+.info__title-forms .input__tel {
+  padding: 22px 20px;
+  border-radius: 5px;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+.info__title-forms .input__tel:nth-child(1) {
+  margin-left: 0;
+}
+.info__title-forms .input {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  outline: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info__title-forms .input__submit {
+  padding: 20px 28px;
+  background: linear-gradient(96.64deg, #e8474f 21.69%, #ff7a81 43.47%, #e8474f 73.5%);
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+.info__title-forms .input__submit:hover {
+  box-shadow: 0px 4px 2px 0px rgba(133, 3, 87, 0.6);
+}
+.info__gift {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-bottom: 120px;
+}
+.info__gift-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1490196078);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 558px;
+}
+.info__gift-item p {
+  margin-left: 10px;
+  max-width: 100%;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+.info__gift-item p span {
+  font-weight: 400;
+  font-style: italic;
+}
+.info__gift-person {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 300px;
+  max-height: 150px;
+}
+.info__gift-person h1 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.info__gift-person p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.sides {
+  background-image: url("../img/background2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  margin: 90px 0;
+}
+.sides__intro h1 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+}
+.sides__card-item {
+  padding: 0 64px;
+}
+.sides__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.sides__card-info {
+  box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.1019607843);
+  padding: 50px;
+  border-radius: 20px;
+  max-height: 500px;
+  height: 100%;
+}
+.sides__card-info p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 20px;
+  text-align: center;
+}
+.sides__card-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.sides__card-block .sad {
+  position: absolute;
+  bottom: -10px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #1b1b1b;
+  color: #fff;
+  padding: 20px 60px;
+  border-radius: 5px;
+  text-align: center;
+  transform: rotate(354deg);
+}
+.sides__card-block .good {
+  background: linear-gradient(115.31deg, #37c9ef -158.66%, #1169c9 69.45%);
+}
+.sides__card-block img {
+  max-height: 450px;
+}
+.sides__card-info-text {
+  display: flex;
+  margin: 20px 0;
+}
+.sides__card-info-text p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 20px;
+  text-align: left;
+}
+.sides__content form {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+.sides__content .input {
+  border: 1px solid #1b1b1b;
+}
+
+.programm__content {
+  position: relative;
+}
+.programm__content .book {
+  position: absolute;
+  bottom: -30%;
+  left: -30%;
+  max-width: 600px;
+}
+.programm__title h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 50px 0;
+}
+.programm__point {
+  margin-left: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 40px;
+  height: 200px;
+}
+.programm__point:first-child {
+  margin-left: 0;
+}
+.programm__points-grid {
+  position: relative;
+  z-index: 10000;
+}
+.programm__point-head {
+  display: flex;
+  justify-content: space-between;
+}
+.programm__point-body {
+  display: flex;
+  justify-content: right;
+  margin-top: 50px;
+}
+.programm__point-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #fff;
+  color: #0f60b6;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #0f60b6;
+  font-size: 12px;
+  margin: 0px auto;
+}
+.programm__point-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.programm__point-text p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.result {
+  margin: 100px 0;
+}
+.result__title h1 {
+  background: linear-gradient(277.41deg, #1169c9 44.25%, #37c9ef 188.12%);
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 42px;
+  color: #fff;
+  max-width: 350px;
+  text-align: center;
+}
+.result__title p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+.result__text-item {
+  margin: 50px 0;
+}
+.result__text-item p {
+  font-size: 22px;
+  font-weight: 300;
+}
+.result__text-item h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+.result__text {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+}
+.result__univer p {
+  font-size: 32px;
+  font-weight: 300;
+}
+.result__univer h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.result__banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.result__img img {
+  max-width: 500px;
+}
+
+.info__footer {
+  margin-top: -235px;
+  z-index: 10000;
+  position: relative;
+}
+.info__footer .info__subtitle {
+  margin-top: 200px;
+}
+.info__footer .info__date-item {
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.info__footer .info__date-item:first-child {
+  margin-left: 0;
+}
+.info__footer .info__date-item h1 {
+  font-size: 34px;
+}
+.info__footer .info__date-item p {
+  font-size: 22px;
+}
+.info__footer .info__title-forms form {
+  display: flex;
+  flex-direction: column;
+  max-width: 376px;
+  width: 100%;
+}
+.info__footer .info__title-forms .input__submit {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  padding: 50px 0;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer__politic {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.footer a {
+  text-decoration: none;
+  border-bottom: 3px solid #000;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1b1b1b;
+  margin-left: 50px;
+}
+.footer p {
+  font-size: 22px;
+  font-weight: 300;
+  color: #1b1b1b;
+  margin: 10px 0;
+}
+.footer p span {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 940px) {
+  .result__banner {
+    flex-direction: column;
+  }
+  .sides__cards {
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  .programm__point-head {
+    flex-direction: column;
+  }
+  .programm__point-body {
+    flex-direction: column;
+  }
+  .programm__point {
+    margin: 30px 0;
+  }
+  .book {
+    display: none;
+  }
+  .programm {
+    padding: 130px 0;
+  }
+  .info__footer .info__date-item p {
+    text-align: center;
+  }
+  .sides__card-item {
+    margin: 70px 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .info__navbar {
+    flex-direction: column-reverse;
+    margin: 50px auto;
+  }
+  .info__logo img {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+  }
+  .info__date {
+    flex-direction: column;
+  }
+  .info__date-item {
+    border-right: none;
+    margin: 20px 0;
+  }
+  .info__title-forms {
+    margin: 50px 0;
+  }
+  .info__title-forms form {
+    flex-direction: column;
+    width: 100%;
+  }
+  .info__title-forms .input__submit {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .info__footer .info__date-item {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .info__gift-person {
+    display: none;
+  }
+  .info__title h1 {
+    font-size: 38px;
+  }
+  .info__footer .info__title-forms form {
+    max-width: 100%;
+  }
+  .result__text {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .footer__politic {
+    flex-direction: column;
+  }
+  .footer__politic-item {
+    margin: 15px 0;
+  }
+  .footer a {
+    margin: 15px 0;
+  }
+  .result__img img {
+    max-width: 100%;
+  }
+  .result__text-item {
+    margin: 20px 0;
+  }
+  .sides__content .info__title-forms {
+    display: none;
+  }
+  .sides__card-item {
+    padding: 0 0;
+    margin: 100px 0;
+  }
+}
+@media screen and (max-width: 384px) {
+  .programm__point {
+    padding: 10px 10px;
+  }
+  .sides__card-info-text p {
+    font-size: 14px;
+  }
+  .info__title h1 {
+    font-size: 28px;
+  }
+  .info__footer .info__date-item h1 {
+    font-size: 24px;
+  }
+  .result__univer h1 {
+    font-size: 24px;
+  }
+  .info__footer .info__date-item {
+    text-align: center;
+    margin: 15px 0;
+  }
+}
